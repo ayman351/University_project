@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تراث اليمن - الصفحة الرئيسية</title>
+    <!-- ربط ملف التنسيق الخاص - ينظم تصميم الموقع ويجعله جميل -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ربط Bootstrap Framework - مكتبة جاهزة تسهل إنشاء تصميم متجاوب وجميل -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ربط Font Awesome - مكتبة الأيقونات لتحسين التصميم البصري -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- بداية رأس الصفحة - يحتوي على الشعار وقائمة التنقل -->
+    <header class="header-section">
+        <div class="logo">
+            <h2>🏛️ موقع تراث اليمن 🏛️</h2>
+        </div>
+        <!-- قائمة التنقل - تساعد الزوار بالانتقال بين صفحات الموقع -->
+        <nav class="main-nav">
+            <!-- قائمة الروابط - تنظم الروابط بشكل أنيق -->
+            <ul>
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="html/architecture.html">العمارة</a></li>
+                <li><a href="html/food.html">الأكلات</a></li>
+                <li><a href="html/costumes.html">الأزياء</a></li>
+                <!-- رابط صفحة التواصل - يحتوي على نموذج للتواصل مع الإدارة -->
+                <li><a href="html/contact.html">تواصل معنا</a></li>
+                <!-- رابط تسجيل الدخول - يسمح للمستخدمين بالدخول لحساباتهم -->
+                <li><a href="html/login.html" class="btn">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي للصفحة - يحتوي على كل محتويات الصفحة -->
+    <main class="main-content">
+        <!-- قسم الترحيب - أول شيء يشوفه الزائر -->
+        <section class="welcome-area">
+            <!-- العنوان الرئيسي للصفحة - يجذب انتباه الزائر -->
+            <h1>أهلا بيكم في موقع تراث اليمن 🇾🇪</h1>
+            <!-- نص الترحيب - يشرح للزائر محتوى الموقع -->
+            <p>هنا بتقدروا تشوفوا جمال التراث اليمني وتتعرفوا عليه بطريقة حلوة</p>
+            
+
+            <!-- عارض الصور المتحرك - يعرض صور التراث اليمني بشكل تلقائي وجميل -->
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <!-- صورة من مجلد الصور المنظم - لسهولة الإدارة والترتيب -->
+                    <img src="images/020d6053-fb6d-438e-9f84-04ab57c78859.jpeg" alt="تراث اليمن">
+                    <div class="slide-text">تراث اليمن الجميل</div>
+                </div>
+                <div class="slide">
+                    <img src="images/50d495a9-cbb5-4122-ba57-0b0dde13aabe.jpeg" alt="أكلات يمنية">
+                    <div class="slide-text">أكلاتنا الشعبية الطيبة</div>
+                </div>
+                <div class="slide">
+                    <img src="images/1584c192-334a-49c6-b12b-5ba513eedd66.jpeg" alt="أزياء يمنية">
+                    <div class="slide-text">أزياؤنا التقليدية الجميلة</div>
+                </div>
+                <div class="slide">
+                    <img src="images/3062e1e7-e1f3-4551-bc46-ae79b94c2ec0.jpeg" alt="عمارة يمنية">
+                    <div class="slide-text">عمارتنا التراثية العريقة</div>
+                </div>
+                
+                <!-- أزرار التنقل للشريط المتحرك -->
+                <div class="slide-dots">
+                    <span class="dot active" onclick="currentSlide(1)">●</span>
+                    <span class="dot" onclick="currentSlide(2)">●</span>
+                    <span class="dot" onclick="currentSlide(3)">●</span>
+                    <span class="dot" onclick="currentSlide(4)">●</span>
+                </div>
+            </div>
+            
+            <!-- JavaScript للعارض -->
+            <script>
+            let slideIndex = 1;
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                let slides = document.getElementsByClassName("slide");
+                let dots = document.getElementsByClassName("dot");
+                
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].classList.remove("active");
+                }
+                
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove("active");
+                }
+                
+                if (slides[slideIndex-1]) {
+                    slides[slideIndex-1].classList.add("active");
+                }
+                if (dots[slideIndex-1]) {
+                    dots[slideIndex-1].classList.add("active");
+                }
+            }
+            
+            // تغيير تلقائي كل 4 ثوانِ
+            setInterval(function() {
+                slideIndex++;
+                showSlides(slideIndex);
+            }, 4000);
+            </script>
+        </section>
+
+        <!-- قسم التراث -->
+        <section class="center-content">
+        </section>
+
+        <!-- قسم بطاقات التراث - يعرض أقسام الموقع بشكل منظم وجميل -->
+        <section class="heritage-sections">
+            <!-- عنوان القسم - يوضح محتوى البطاقات -->
+            <h2>أقسام التراث اليمني</h2>
+            <!-- حاوية البطاقات بتقنية Grid - تنظم البطاقات في صفوف وأعمدة متناسقة -->
+            <div class="heritage-grid">
+                <div class="heritage-card">
+                    <img src="images/Yemen.jpeg" alt="العمارة اليمنية">
+                    <!-- عنوان البطاقة - يوضح نوع التراث -->
+                    <h3>🏛️ العمارة التراثية</h3>
+                    <!-- وصف البطاقة - يشرح المحتوى للزائر -->
+                    <p>تعرف على جمال العمارة اليمنية القديمة</p>
+                    <!-- زر الانتقال - ينقل الزائر لصفحة مفصلة -->
+                    <a href="html/architecture.html" class="card-btn">شاهد المزيد</a>
+                </div>
+                
+                <div class="heritage-card">
+                    <img src="images/50d495a9-cbb5-4122-ba57-0b0dde13aabe.jpeg" alt="أكل يمني">
+                    <h3>🍽️ أكلاتنا الشعبية</h3>
+                    <p>تعرف على أشهر الأكلات اليمنية</p>
+                    <a href="html/food.html" class="card-btn">شاهد المزيد</a>
+                </div>
+                
+                <div class="heritage-card">
+                    <img src="images/1584c192-334a-49c6-b12b-5ba513eedd66.jpeg" alt="لبس يمني">
+                    <h3>👗 لبسنا التقليدي</h3>
+                    <p>شوف اللبس اليمني التقليدي والجنبية المشهورة</p>
+                    <a href="html/costumes.html" class="card-btn">شاهد المزيد</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- معرض صور إضافي -->
+        <section class="gallery-section">
+            <h2>معرض الصور التراثية</h2>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <input type="checkbox" id="img1">
+                    <label for="img1">
+                        <img src="images/3062e1e7-e1f3-4551-bc46-ae79b94c2ec0.jpeg" alt="صورة تراثية 1">
+                        <div class="gallery-overlay">🔍 اضغط للتكبير</div>
+                    </label>
+                </div>
+                
+                <div class="gallery-item">
+                    <input type="checkbox" id="img2">
+                    <label for="img2">
+                        <img src="images/2632e850-3016-4c6c-8c6f-b854e2c2eff0.jpeg" alt="صورة تراثية 2">
+                        <div class="gallery-overlay">🔍 اضغط للتكبير</div>
+                    </label>
+                </div>
+                
+                <div class="gallery-item">
+                    <input type="checkbox" id="img3">
+                    <label for="img3">
+                        <img src="images/8049a4e4-b22b-4306-94d4-cc08b076c784.jpeg" alt="صورة تراثية 3">
+                        <div class="gallery-overlay">🔍 اضغط للتكبير</div>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- معلومات عن التراث -->
+        <section class="bg-light text-center mt-2">
+            <h2>عن تراث اليمن</h2>
+            <p><strong>اليمن أرض الحضارات العريقة والتراث الأصيل</strong></p>
+            <p>يمتد التراث اليمني لآلاف السنين، حيث كانت اليمن مهد الحضارات القديمة مثل مملكة سبأ وحمير. 
+            يتميز التراث اليمني بتنوعه وثراءه، من العمارة الطينية المذهلة في صنعاء القديمة وشبام، 
+            إلى المأكولات الشعبية الغنية بالنكهات، والأزياء التقليدية المميزة.</p>
+            
+            <h3>مميزات التراث اليمني:</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li>✅ عمارة طينية فريدة من نوعها</li>
+                <li>✅ مطبخ غني بالتوابل والنكهات</li>
+                <li>✅ أزياء تقليدية متنوعة</li>
+                <li>✅ فنون وحرف يدوية عريقة</li>
+            </ul>
+        </section>
+    </main>
+
+    <aside class="text-center mt-2">
+        <h4>روابط مفيدة</h4>
+        <div class="social-links">
+            <a href="#">📚 تاريخ اليمن</a>
+            <a href="#">🗺️ خريطة المواقع التراثية</a>
+            <a href="#">📷 معرض الصور</a>
+            <a href="#">🎥 فيديوهات تراثية</a>
+        </div>
+    </aside>
+
+    <footer class="footer-section">
+        <div class="footer-content">
+            <h3>🏛️ موقع تراث اليمن 🏛️</h3>
+            <p>موقع مخصص لعرض وحفظ التراث اليمني العريق للأجيال القادمة</p>
+            
+            <div class="footer-links">
+                <h4>روابط سريعة:</h4>
+                <a href="index.html">الرئيسية</a> | 
+                <a href="html/architecture.html">العمارة</a> | 
+                <a href="html/food.html">الأكلات</a> | 
+                <a href="html/costumes.html">الأزياء</a> | 
+                <a href="html/contact.html">تواصل معنا</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="#">فيسبوك</a>
+                <a href="#">تويتر</a>
+                <a href="#">انستقرام</a>
+                <a href="#">يوتيوب</a>
+            </div>
+            
+            <p>&copy; 2024 تراث اليمن. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+</body>
+</html>

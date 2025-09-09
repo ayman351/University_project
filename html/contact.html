@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تواصل معنا - تراث اليمن</title>
+    <!-- ربط ملف التنسيق الخاص - ينظم تصميم الموقع ويجعله جميل -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- ربط Bootstrap CSS - مكتبة تصميم جاهزة لتحسين المظهر والاستجابة -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ربط مكتبة Font Awesome - توفر أيقونات جميلة للهاتف والبريد والموقع -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="header-section">
@@ -13,7 +18,7 @@
         </div>
         <nav class="main-nav">
             <ul>
-                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="../index.html">الرئيسية</a></li>
                 <li><a href="architecture.html">العمارة</a></li>
                 <li><a href="food.html">الأكلات</a></li>
                 <li><a href="costumes.html">الأزياء</a></li>
@@ -34,15 +39,16 @@
         <section class="text-center">
             <div class="form-container">
                 <h2>أرسل لنا رسالة</h2>
+                <!-- نموذج التواصل البسيط - يساعد الزوار بالتواصل مع إدارة الموقع -->
                 <form action="#" method="post">
                     <div class="form-group">
                         <label for="firstName">الاسم الأول *</label>
-                        <input type="text" id="firstName" name="firstName" required minlength="2">
+                        <input type="text" id="firstName" name="firstName" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="lastName">اسم العائلة *</label>
-                        <input type="text" id="lastName" name="lastName" required minlength="2">
+                        <input type="text" id="lastName" name="lastName" required>
                     </div>
                     
                     <div class="form-group">
@@ -52,7 +58,7 @@
                     
                     <div class="form-group">
                         <label for="phone">رقم الهاتف</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{9,15}" placeholder="مثال: 777123456">
+                        <input type="tel" id="phone" name="phone" placeholder="مثال: 777123456">
                     </div>
                     
                     <div class="form-group">
@@ -69,7 +75,7 @@
                     
                     <div class="form-group">
                         <label for="message">نص الرسالة *</label>
-                        <textarea id="message" name="message" rows="5" required minlength="10" placeholder="اكتب رسالتك هنا..."></textarea>
+                        <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
                     </div>
                     
                     <div class="form-group">
@@ -87,27 +93,29 @@
             <h2>طرق التواصل الأخرى</h2>
             <p>يمكنكم التواصل معنا عبر الوسائل التالية</p>
             
+            <!-- معلومات التواصل مع أيقونات Font Awesome - تجعل المعلومات أوضح وأجمل للزائر -->
             <div class="contact-info">
                 <div class="contact-item">
-                    <h4>📧 البريد الإلكتروني</h4>
+                    <!-- أيقونة البريد من Font Awesome - تساعد الزائر يفهم نوع المعلومة بسرعة -->
+                    <h4><i class="fas fa-envelope"></i> البريد الإلكتروني</h4>
                     <p>info@yemenheritage.com</p>
                     <p>contact@yemenheritage.com</p>
                 </div>
                 
                 <div class="contact-item">
-                    <h4>📞 الهاتف</h4>
+                    <h4><i class="fas fa-phone"></i> الهاتف</h4>
                     <p>+967 1 123456</p>
                     <p>+967 777 123456</p>
                 </div>
                 
                 <div class="contact-item">
-                    <h4>📍 العنوان</h4>
+                    <h4><i class="fas fa-map-marker-alt"></i> العنوان</h4>
                     <p>صنعاء القديمة</p>
                     <p>شارع التراث، اليمن</p>
                 </div>
                 
                 <div class="contact-item">
-                    <h4>🕐 أوقات العمل</h4>
+                    <h4><i class="fas fa-clock"></i> أوقات العمل</h4>
                     <p>السبت - الخميس</p>
                     <p>8:00 ص - 4:00 م</p>
                 </div>
@@ -129,87 +137,31 @@
             </div>
         </section>
 
-        <!-- اشتراك النشرة الإخبارية -->
-        <section class="text-center mt-2 bg-light">
-            <h2>📰 اشترك في النشرة الإخبارية</h2>
-            <p>احصل على آخر الأخبار والمقالات حول التراث اليمني</p>
-            
-            <form action="#" method="post" style="max-width: 400px; margin: 0 auto;">
-                <div class="form-group">
-                    <input type="email" placeholder="أدخل بريدك الإلكتروني" required style="display: inline-block; width: 70%;">
-                    <button type="submit" class="btn" style="display: inline-block; width: 25%;">اشترك</button>
-                </div>
-            </form>
-        </section>
     </main>
 
+    <!-- تذييل الصفحة  -->
     <footer class="footer-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="footer-content">
-                        <h3>تراث اليمن</h3>
-                        <p>موقع مخصص لعرض وحفظ التراث اليمني العريق للأجيال القادمة</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-content">
-                        <h4>روابط سريعة</h4>
-                        <ul class="footer-links">
-                            <li><a href="index.html">الرئيسية</a></li>
-                            <li><a href="architecture.html">العمارة</a></li>
-                            <li><a href="food.html">الأكلات</a></li>
-                            <li><a href="costumes.html">الأزياء</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-content">
-                        <h4>تابعنا</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <p>&copy; 2024 تراث اليمن. جميع الحقوق محفوظة</p>
-                    </div>
-                </div>
+        <div class="footer-content">
+            <h3>🏛️ موقع تراث اليمن 🏛️</h3>
+            <p>موقع مخصص لعرض وحفظ التراث اليمني العريق للأجيال القادمة</p>
+            
+            <div class="footer-links">
+                <h4>روابط سريعة:</h4>
+                <a href="../index.html">الرئيسية</a> | 
+                <a href="architecture.html">العمارة</a> | 
+                <a href="food.html">الأكلات</a> | 
+                <a href="costumes.html">الأزياء</a>
             </div>
+            
+            <div class="social-links">
+                <a href="#">فيسبوك</a>
+                <a href="#">تويتر</a>
+                <a href="#">انستقرام</a>
+                <a href="#">يوتيوب</a>
+            </div>
+            
+            <p>&copy; 2024 تراث اليمن. جميع الحقوق محفوظة</p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Form validation
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                var forms = document.getElementsByClassName('needs-validation');
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        } else {
-                            event.preventDefault();
-                            alert('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.');
-                            form.reset();
-                            form.classList.remove('was-validated');
-                            return false;
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-
-        // Newsletter form
-        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('تم الاشتراك بنجاح في النشرة الإخبارية!');
-            this.reset();
-        });
-    </script>
 </body>
 </html>
