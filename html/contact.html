@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - تراث اليمن</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header-section">
+        <div class="logo">
+            <h2>🏛️ موقع تراث اليمن 🏛️</h2>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="architecture.html">العمارة</a></li>
+                <li><a href="food.html">الأكلات</a></li>
+                <li><a href="costumes.html">الأزياء</a></li>
+                <li><a href="contact.html" class="active">تواصل معنا</a></li>
+                <li><a href="login.html" class="btn">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- عنوان الصفحة -->
+        <section class="page-header">
+            <h1>📞 تواصل معنا</h1>
+            <p>نحن هنا للإجابة على استفساراتكم ومشاركة آرائكم حول التراث اليمني</p>
+        </section>
+
+        <!-- نموذج التواصل البسيط -->
+        <section class="text-center">
+            <div class="form-container">
+                <h2>أرسل لنا رسالة</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="firstName">الاسم الأول *</label>
+                        <input type="text" id="firstName" name="firstName" required minlength="2">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">اسم العائلة *</label>
+                        <input type="text" id="lastName" name="lastName" required minlength="2">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{9,15}" placeholder="مثال: 777123456">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">موضوع الرسالة *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">اختر الموضوع</option>
+                            <option value="heritage-info">استفسار عن التراث</option>
+                            <option value="collaboration">تعاون وشراكة</option>
+                            <option value="feedback">ملاحظات واقتراحات</option>
+                            <option value="technical">مشكلة تقنية</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">نص الرسالة *</label>
+                        <textarea id="message" name="message" rows="5" required minlength="10" placeholder="اكتب رسالتك هنا..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <label for="agreeTerms">أوافق على شروط الاستخدام وسياسة الخصوصية *</label>
+                    </div>
+                    
+                    <button type="submit" class="btn">📤 إرسال الرسالة</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- معلومات التواصل -->
+        <section class="bg-light text-center mt-2">
+            <h2>طرق التواصل الأخرى</h2>
+            <p>يمكنكم التواصل معنا عبر الوسائل التالية</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>📧 البريد الإلكتروني</h4>
+                    <p>info@yemenheritage.com</p>
+                    <p>contact@yemenheritage.com</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h4>📞 الهاتف</h4>
+                    <p>+967 1 123456</p>
+                    <p>+967 777 123456</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h4>📍 العنوان</h4>
+                    <p>صنعاء القديمة</p>
+                    <p>شارع التراث، اليمن</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h4>🕐 أوقات العمل</h4>
+                    <p>السبت - الخميس</p>
+                    <p>8:00 ص - 4:00 م</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- وسائل التواصل الاجتماعي -->
+        <section class="text-center mt-2">
+            <h2>تابعونا على وسائل التواصل الاجتماعي</h2>
+            <p>للحصول على آخر الأخبار والمحتوى حول التراث اليمني</p>
+            
+            <div class="social-links">
+                <a href="#">فيسبوك</a>
+                <a href="#">تويتر</a> 
+                <a href="#">انستقرام</a>
+                <a href="#">يوتيوب</a>
+                <a href="#">واتساب</a>
+                <a href="#">تيليجرام</a>
+            </div>
+        </section>
+
+        <!-- اشتراك النشرة الإخبارية -->
+        <section class="text-center mt-2 bg-light">
+            <h2>📰 اشترك في النشرة الإخبارية</h2>
+            <p>احصل على آخر الأخبار والمقالات حول التراث اليمني</p>
+            
+            <form action="#" method="post" style="max-width: 400px; margin: 0 auto;">
+                <div class="form-group">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني" required style="display: inline-block; width: 70%;">
+                    <button type="submit" class="btn" style="display: inline-block; width: 25%;">اشترك</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <h3>تراث اليمن</h3>
+                        <p>موقع مخصص لعرض وحفظ التراث اليمني العريق للأجيال القادمة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <h4>روابط سريعة</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="architecture.html">العمارة</a></li>
+                            <li><a href="food.html">الأكلات</a></li>
+                            <li><a href="costumes.html">الأزياء</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <h4>تابعنا</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <p>&copy; 2024 تراث اليمن. جميع الحقوق محفوظة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validation
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        } else {
+                            event.preventDefault();
+                            alert('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.');
+                            form.reset();
+                            form.classList.remove('was-validated');
+                            return false;
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+        // Newsletter form
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('تم الاشتراك بنجاح في النشرة الإخبارية!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

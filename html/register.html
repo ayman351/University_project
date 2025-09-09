@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد - تراث اليمن</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header-section">
+        <div class="logo">
+            <h2>🏛️ موقع تراث اليمن 🏛️</h2>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="architecture.html">العمارة</a></li>
+                <li><a href="food.html">الأكلات</a></li>
+                <li><a href="costumes.html">الأزياء</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+                <li><a href="register.html" class="btn active">إنشاء حساب</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- عنوان الصفحة -->
+        <section class="page-header">
+            <h1>📝 إنشاء حساب جديد</h1>
+            <p>انضم إلى مجتمع محبي التراث اليمني وشارك في الحفاظ على تراثنا العريق</p>
+        </section>
+
+        <!-- نموذج التسجيل البسيط -->
+        <section class="text-center">
+            <div class="form-container">
+                <h2>إنشاء حساب جديد</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="firstName">الاسم الأول *</label>
+                        <input type="text" id="firstName" name="firstName" required minlength="2" placeholder="أدخل اسمك الأول">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">اسم العائلة *</label>
+                        <input type="text" id="lastName" name="lastName" required minlength="2" placeholder="أدخل اسم العائلة">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني *</label>
+                        <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{9,15}" placeholder="مثال: 777123456">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">كلمة المرور *</label>
+                        <input type="password" id="password" name="password" required minlength="8" placeholder="أدخل كلمة مرور قوية">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">تأكيد كلمة المرور *</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" placeholder="أعد إدخال كلمة المرور">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthYear">سنة الميلاد</label>
+                        <select id="birthYear" name="birthYear">
+                            <option value="">اختر سنة الميلاد</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <label for="agreeTerms">أوافق على شروط الاستخدام وسياسة الخصوصية *</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="newsletter">
+                        <label for="newsletter">أرغب في الحصول على النشرة الإخبارية</label>
+                    </div>
+                    
+                    <button type="submit" class="btn">👤 إنشاء الحساب</button>
+                    
+                    <div class="form-links">
+                        <p><a href="login.html">لديك حساب بالفعل؟ تسجيل الدخول</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- مميزات العضوية -->
+        <section class="text-center mt-2 bg-light">
+            <h2>مميزات العضوية في موقع تراث اليمن</h2>
+            
+            <div class="features-list">
+                <div class="feature-item">
+                    <h4>🎯 محتوى حصري</h4>
+                    <p>احصل على محتوى تراثي حصري وقصص نادرة من التراث اليمني</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>🤝 مجتمع تفاعلي</h4>
+                    <p>انضم إلى مجتمع محبي التراث وشارك في المناقشات والفعاليات</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4>📚 مكتبة شخصية</h4>
+                    <p>احفظ المقالات المفضلة وأنشئ مكتبتك الشخصية من المحتوى التراثي</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-content">
+            <h3>🏛️ موقع تراث اليمن 🏛️</h3>
+            <p>موقع مخصص لعرض وحفظ التراث اليمني العريق للأجيال القادمة</p>
+            
+            <div class="footer-links">
+                <h4>روابط سريعة:</h4>
+                <a href="index.html">الرئيسية</a> | 
+                <a href="architecture.html">العمارة</a> | 
+                <a href="food.html">الأكلات</a> | 
+                <a href="costumes.html">الأزياء</a> | 
+                <a href="contact.html">تواصل معنا</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="#">فيسبوك</a>
+                <a href="#">تويتر</a>
+                <a href="#">انستقرام</a>
+                <a href="#">يوتيوب</a>
+            </div>
+            
+            <p>&copy; 2024 تراث اليمن. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+    <main class="auth-main">
+        <section class="auth-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="auth-card">
+                            <div class="auth-header text-center mb-4">
+                                <div class="auth-icon">
+                                    <i class="fas fa-user-plus"></i>
+                                </div>
+                                <h2>إنشاء حساب جديد</h2>
+                                <p>انضم إلى مجتمع محبي التراث اليمني</p>
+                            </div>
+
+                            <form id="registerForm" class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">
+                                            <i class="fas fa-user"></i> الاسم الأول *
+                                        </label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" 
+                                               placeholder="أدخل اسمك الأول" required minlength="2" maxlength="50"
+                                               pattern="[a-zA-Zأ-ي\s]+" title="الاسم يجب أن يحتوي على أحرف فقط">
+                                        <div class="invalid-feedback">
+                                            الرجاء إدخال اسم أول صحيح (أحرف فقط، 2-50 حرف)
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">
+                                            <i class="fas fa-user"></i> اسم العائلة *
+                                        </label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" 
+                                               placeholder="أدخل اسم العائلة" required minlength="2" maxlength="50"
+                                               pattern="[a-zA-Zأ-ي\s]+" title="اسم العائلة يجب أن يحتوي على أحرف فقط">
+                                        <div class="invalid-feedback">
+                                            الرجاء إدخال اسم عائلة صحيح (أحرف فقط، 2-50 حرف)
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="username" class="form-label">
+                                            <i class="fas fa-at"></i> اسم المستخدم *
+                                        </label>
+                                        <input type="text" class="form-control" id="username" name="username" 
+                                               placeholder="اختر اسم مستخدم فريد" required minlength="3" maxlength="20"
+                                               pattern="^[a-zA-Z0-9_-]{3,20}$" title="3-20 حرف، أرقام، شرطة، أو شرطة سفلية فقط">
+                                        <div class="invalid-feedback">
+                                            اسم المستخدم يجب أن يكون 3-20 حرف (أحرف إنجليزية، أرقام، _ أو - فقط)
+                                        </div>
+                                        <div class="form-text">
+                                            <i class="fas fa-info-circle"></i> سيكون هذا اسمك المرئي للآخرين
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">
+                                            <i class="fas fa-envelope"></i> البريد الإلكتروني *
+                                        </label>
+                                        <input type="email" class="form-control" id="email" name="email" 
+                                               placeholder="أدخل بريدك الإلكتروني" required>
+                                        <div class="invalid-feedback">
+                                            الرجاء إدخال بريد إلكتروني صحيح
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="password" class="form-label">
+                                            <i class="fas fa-lock"></i> كلمة المرور *
+                                        </label>
+                                        <div class="password-input-group">
+                                            <input type="password" class="form-control" id="password" name="password" 
+                                                   placeholder="أدخل كلمة مرور قوية" required minlength="8"
+                                                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                                            <button type="button" class="btn btn-outline-secondary password-toggle" 
+                                                    onclick="togglePassword('password')">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <div class="invalid-feedback">
+                                                كلمة المرور يجب أن تحتوي على 8 أحرف على الأقل، حرف كبير، حرف صغير، رقم ورمز خاص
+                                            </div>
+                                        </div>
+                                        <div class="password-strength">
+                                            <div class="strength-bar">
+                                                <div class="strength-fill"></div>
+                                            </div>
+                                            <span class="strength-text">قوة كلمة المرور</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="confirmPassword" class="form-label">
+                                            <i class="fas fa-lock"></i> تأكيد كلمة المرور *
+                                        </label>
+                                        <div class="password-input-group">
+                                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" 
+                                                   placeholder="أعد إدخال كلمة المرور" required>
+                                            <button type="button" class="btn btn-outline-secondary password-toggle" 
+                                                    onclick="togglePassword('confirmPassword')">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <div class="invalid-feedback">
+                                                كلمتا المرور غير متطابقتين
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="birthDate" class="form-label">
+                                            <i class="fas fa-calendar"></i> تاريخ الميلاد
+                                        </label>
+                                        <input type="date" class="form-control" id="birthDate" name="birthDate" 
+                                               max="2010-01-01" min="1940-01-01">
+                                        <div class="invalid-feedback">
+                                            الرجاء إدخال تاريخ ميلاد صحيح
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">
+                                            <i class="fas fa-phone"></i> رقم الهاتف
+                                        </label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" 
+                                               placeholder="+967 XXX XXX XXX" pattern="[+]?[0-9]{9,15}">
+                                        <div class="invalid-feedback">
+                                            الرجاء إدخال رقم هاتف صحيح
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="region" class="form-label">
+                                            <i class="fas fa-map-marker-alt"></i> المنطقة/المحافظة
+                                        </label>
+                                        <select class="form-select" id="region" name="region">
+                                            <option value="">اختر المنطقة</option>
+                                            <option value="sanaa">صنعاء</option>
+                                            <option value="aden">عدن</option>
+                                            <option value="taiz">تعز</option>
+                                            <option value="hodeidah">الحديدة</option>
+                                            <option value="ibb">إب</option>
+                                            <option value="dhamar">ذمار</option>
+                                            <option value="hadramout">حضرموت</option>
+                                            <option value="lahj">لحج</option>
+                                            <option value="marib">مأرب</option>
+                                            <option value="shabwa">شبوة</option>
+                                            <option value="abyan">أبين</option>
+                                            <option value="jawf">الجوف</option>
+                                            <option value="saada">صعدة</option>
+                                            <option value="bayda">البيضاء</option>
+                                            <option value="daleh">الضالع</option>
+                                            <option value="mahwit">المحويت</option>
+                                            <option value="hajjah">حجة</option>
+                                            <option value="amran">عمران</option>
+                                            <option value="raymah">ريمة</option>
+                                            <option value="mahrah">المهرة</option>
+                                            <option value="socotra">سقطرى</option>
+                                            <option value="other">أخرى</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">الاهتمامات التراثية</label>
+                                        <div class="interests-checkboxes">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="architecture" id="interest1">
+                                                <label class="form-check-label" for="interest1">العمارة التقليدية</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="food" id="interest2">
+                                                <label class="form-check-label" for="interest2">الأكلات الشعبية</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="costumes" id="interest3">
+                                                <label class="form-check-label" for="interest3">الأزياء التقليدية</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="music" id="interest4">
+                                                <label class="form-check-label" for="interest4">الموسيقى والفنون</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="crafts" id="interest5">
+                                                <label class="form-check-label" for="interest5">الحرف اليدوية</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="agreeTerms" required>
+                                            <label class="form-check-label" for="agreeTerms">
+                                                أوافق على <a href="#" target="_blank">شروط الاستخدام</a> و <a href="#" target="_blank">سياسة الخصوصية</a> *
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                يجب الموافقة على الشروط والأحكام
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                أريد الاشتراك في النشرة الإخبارية للحصول على آخر الأخبار والمقالات
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-grid">
+                                            <button type="submit" class="btn btn-primary btn-lg">
+                                                <i class="fas fa-user-plus"></i> إنشاء الحساب
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="auth-divider my-4">
+                                <span>أو</span>
+                            </div>
+
+                            <div class="social-register">
+                                <button type="button" class="btn btn-outline-danger w-100 mb-2">
+                                    <i class="fab fa-google"></i> إنشاء حساب بواسطة Google
+                                </button>
+                                <button type="button" class="btn btn-outline-primary w-100">
+                                    <i class="fab fa-facebook-f"></i> إنشاء حساب بواسطة Facebook
+                                </button>
+                            </div>
+
+                            <div class="auth-footer text-center mt-4">
+                                <p>لديك حساب بالفعل؟ <a href="login.html" class="login-link">تسجيل الدخول</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Notice -->
+        <section class="privacy-notice py-4 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="privacy-content text-center">
+                            <h4><i class="fas fa-shield-alt"></i> حماية خصوصيتك مهمة بالنسبة لنا</h4>
+                            <p>نحن ملتزمون بحماية بياناتك الشخصية وعدم مشاركتها مع أطراف ثالثة. 
+                            جميع المعلومات التي تقدمها محمية بأعلى معايير الأمان.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <h3>تراث اليمن</h3>
+                        <p>موقع مخصص لعرض وحفظ التراث اليمني العريق للأجيال القادمة</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <h4>روابط سريعة</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="architecture.html">العمارة</a></li>
+                            <li><a href="food.html">الأكلات</a></li>
+                            <li><a href="costumes.html">الأزياء</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <h4>تابعنا</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <p>&copy; 2024 تراث اليمن. جميع الحقوق محفوظة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Password toggle function
+        function togglePassword(fieldId) {
+            const passwordField = document.getElementById(fieldId);
+            const toggleButton = passwordField.parentNode.querySelector('.password-toggle i');
+            
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleButton.classList.remove('fa-eye');
+                toggleButton.classList.add('fa-eye-slash');
+            } else {
+                passwordField.type = 'password';
+                toggleButton.classList.remove('fa-eye-slash');
+                toggleButton.classList.add('fa-eye');
+            }
+        }
+
+        // Password strength checker
+        document.getElementById('password').addEventListener('input', function() {
+            const password = this.value;
+            const strengthBar = document.querySelector('.strength-fill');
+            const strengthText = document.querySelector('.strength-text');
+            
+            let strength = 0;
+            let message = '';
+            
+            if (password.length >= 8) strength++;
+            if (/[a-z]/.test(password)) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[^A-Za-z0-9]/.test(password)) strength++;
+            
+            switch(strength) {
+                case 0:
+                case 1:
+                    strengthBar.className = 'strength-fill weak';
+                    message = 'ضعيفة جداً';
+                    break;
+                case 2:
+                    strengthBar.className = 'strength-fill weak';
+                    message = 'ضعيفة';
+                    break;
+                case 3:
+                    strengthBar.className = 'strength-fill medium';
+                    message = 'متوسطة';
+                    break;
+                case 4:
+                    strengthBar.className = 'strength-fill strong';
+                    message = 'قوية';
+                    break;
+                case 5:
+                    strengthBar.className = 'strength-fill very-strong';
+                    message = 'قوية جداً';
+                    break;
+            }
+            
+            strengthText.textContent = message;
+        });
+
+        // Confirm password validation
+        document.getElementById('confirmPassword').addEventListener('input', function() {
+            const password = document.getElementById('password').value;
+            const confirmPassword = this.value;
+            
+            if (confirmPassword !== password) {
+                this.setCustomValidity('كلمتا المرور غير متطابقتين');
+            } else {
+                this.setCustomValidity('');
+            }
+        });
+
+        // Username availability check (simulation)
+        document.getElementById('username').addEventListener('blur', function() {
+            const username = this.value;
+            if (username.length >= 3) {
+                // Simulate checking username availability
+                const unavailableUsernames = ['admin', 'test', 'user', 'yemen', 'heritage'];
+                if (unavailableUsernames.includes(username.toLowerCase())) {
+                    this.setCustomValidity('اسم المستخدم غير متاح، الرجاء اختيار اسم آخر');
+                } else {
+                    this.setCustomValidity('');
+                }
+            }
+        });
+
+        // Form validation
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        
+                        // Check password match
+                        const password = document.getElementById('password').value;
+                        const confirmPassword = document.getElementById('confirmPassword').value;
+                        if (password !== confirmPassword) {
+                            document.getElementById('confirmPassword').setCustomValidity('كلمتا المرور غير متطابقتين');
+                        }
+                        
+                        if (form.checkValidity() === false) {
+                            event.stopPropagation();
+                        } else {
+                            // Collect interests
+                            const interests = [];
+                            document.querySelectorAll('.interests-checkboxes input:checked').forEach(function(checkbox) {
+                                interests.push(checkbox.value);
+                            });
+                            
+                            // Simulate successful registration
+                            alert('تم إنشاء حسابك بنجاح! مرحباً بك في موقع تراث اليمن');
+                            // Redirect to login page
+                            window.location.href = 'login.html';
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+</html>
